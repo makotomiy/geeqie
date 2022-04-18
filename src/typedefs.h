@@ -127,6 +127,10 @@ typedef enum {
 	SPLIT_VERT,
 	SPLIT_HOR,
 	SPLIT_QUAD,
+	SPLIT_VERT3,
+	SPLIT_VERT4,
+	SPLIT_HOR3,
+	SPLIT_HOR4
 } ImageSplitMode;
 
 typedef enum {

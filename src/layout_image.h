@@ -27,6 +27,8 @@ GtkWidget *layout_image_new(LayoutWindow *lw, gint i);
 void layout_image_activate(LayoutWindow *lw, gint i, gboolean force);
 GtkWidget *layout_image_setup_split_none(LayoutWindow *lw);
 GtkWidget *layout_image_setup_split_hv(LayoutWindow *lw, gboolean horizontal);
+GtkWidget *layout_image_setup_split_hv3(LayoutWindow *lw, gboolean horizontal);
+GtkWidget *layout_image_setup_split_hv4(LayoutWindow *lw, gboolean horizontal);
 GtkWidget *layout_image_setup_split(LayoutWindow *lw, ImageSplitMode mode);
 
 void layout_image_set_fd(LayoutWindow *lw, FileData *fd);

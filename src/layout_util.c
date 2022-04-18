@@ -2642,10 +2642,15 @@ static GtkToggleActionEntry menu_view_dir_toggle_entries[] = {
 };
 
 static GtkRadioActionEntry menu_split_radio_entries[] = {
-  { "SplitHorizontal",	NULL,			N_("_Horizontal"),			"E",			N_("Split panes horizontal."),			SPLIT_HOR },
-  { "SplitVertical",	NULL,			N_("_Vertical"),			"U",			N_("Split panes vertical"),				SPLIT_VERT },
-  { "SplitQuad",	NULL,			N_("_Quad"),				NULL,			N_("Split panes quad"),				SPLIT_QUAD },
-  { "SplitSingle",	NULL,			N_("_Single"),				"Y",			N_("Single pane"),				SPLIT_NONE }
+  { "SplitHorizontal",	NULL,			N_("_Horizontal"),			"E",			N_("Split panes horizontal."),		SPLIT_HOR },
+  { "SplitHorizontal3",	NULL,			N_("Horizontal (3)"),		NULL,			N_("Split 3 panes horizontal."),	SPLIT_HOR3 },
+  { "SplitHorizontal4",	NULL,			N_("Horizontal (4)"),		NULL,			N_("Split 4 panes horizontal."),	SPLIT_HOR4 },
+
+  { "SplitVertical",	NULL,			N_("_Vertical"),			"U",			N_("Split panes vertical"),			SPLIT_VERT },
+  { "SplitVertical3",	NULL,			N_("Vertical (3)"),			NULL,			N_("Split 3 panes vertical"),		SPLIT_VERT3 },
+  { "SplitVertical4",	NULL,			N_("Vertical (4)"),			NULL,			N_("Split 4 panes vertical"),		SPLIT_VERT4 },
+  { "SplitQuad",		NULL,			N_("_Quad"),				NULL,			N_("Split panes quad"),				SPLIT_QUAD },
+  { "SplitSingle",		NULL,			N_("_Single"),				"Y",			N_("Single pane"),					SPLIT_NONE }
 };
 
 static GtkRadioActionEntry menu_color_radio_entries[] = {
@@ -2843,7 +2848,11 @@ static const gchar *menu_ui_description =
 "      </menu>"
 "      <menu action='SplitMenu'>"
 "        <menuitem action='SplitHorizontal'/>"
+"        <menuitem action='SplitHorizontal3'/>"
+"        <menuitem action='SplitHorizontal4'/>"
 "        <menuitem action='SplitVertical'/>"
+"        <menuitem action='SplitVertical3'/>"
+"        <menuitem action='SplitVertical4'/>"
 "        <menuitem action='SplitQuad'/>"
 "        <menuitem action='SplitSingle'/>"
 "        <separator/>"
